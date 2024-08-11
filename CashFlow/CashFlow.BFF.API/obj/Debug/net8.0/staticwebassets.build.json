@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "reA7GSVbpprVpR0u81DFtyCU6ppf6/eB9pQ/EAtsIFg=",
+  "Source": "CashFlow.BFF.API",
+  "BasePath": "_content/CashFlow.BFF.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\bin\Debug\net8.0\CashFlow.Sidecar.deps.json
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\bin\Debug\net8.0\CashFlow.Sidecar.dll
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\bin\Debug\net8.0\CashFlow.Sidecar.pdb
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\obj\Debug\net8.0\CashFlow.Sidecar.csproj.AssemblyReference.cache
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\obj\Debug\net8.0\CashFlow.Sidecar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\obj\Debug\net8.0\CashFlow.Sidecar.AssemblyInfoInputs.cache
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\obj\Debug\net8.0\CashFlow.Sidecar.AssemblyInfo.cs
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\obj\Debug\net8.0\CashFlow.Sidecar.csproj.CoreCompileInputs.cache
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\obj\Debug\net8.0\CashFlow.Sidecar.dll
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\obj\Debug\net8.0\refint\CashFlow.Sidecar.dll
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\obj\Debug\net8.0\CashFlow.Sidecar.pdb
+C:\Bruno\Estudo\FluxoCaixa\CashFlow\CashFlow.Sidecar\obj\Debug\net8.0\ref\CashFlow.Sidecar.dll

@@ -1,0 +1,121 @@
+name: dockercompose13957353777861134575
+services:
+  cashflow.bff.api:
+    build:
+      context: C:\Bruno\Estudo\FluxoCaixa\CashFlow
+      dockerfile: CashFlow.BFF.API/Dockerfile
+    depends_on:
+      cashflow.payment.api:
+        condition: service_started
+        required: true
+      cashflow.reports.api:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+    image: cashflowbffapi
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: C:\Users\bscorreia\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\bscorreia\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  cashflow.payment.api:
+    build:
+      context: C:\Bruno\Estudo\FluxoCaixa\CashFlow
+      dockerfile: CashFlow.Payment.API/Dockerfile
+    depends_on:
+      rabbitmq:
+        condition: service_started
+        required: true
+      sqlserver:
+        condition: service_started
+        required: true
+    image: cashflowpaymentapi
+    networks:
+      backend: null
+  cashflow.reports.api:
+    build:
+      context: C:\Bruno\Estudo\FluxoCaixa\CashFlow
+      dockerfile: CashFlow.Reports.API/Dockerfile
+    depends_on:
+      mongodb:
+        condition: service_started
+        required: true
+      rabbitmq:
+        condition: service_started
+        required: true
+    image: cashflowreportsapi
+    networks:
+      backend: null
+  mongodb:
+    container_name: mongodb
+    image: mongo:6
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 27017
+        published: "27017"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: mongo-data
+        target: /data/db
+        volume: {}
+  rabbitmq:
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_DEFAULT_USER: guest
+    image: rabbitmq:3-management
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 5672
+        published: "5672"
+        protocol: tcp
+      - mode: ingress
+        target: 15672
+        published: "15672"
+        protocol: tcp
+  sqlserver:
+    container_name: sqlserver
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: YourStrong@Passw0rd
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      backend: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+networks:
+  backend:
+    name: dockercompose13957353777861134575_backend
+    driver: bridge
+volumes:
+  mongo-data:
+    name: dockercompose13957353777861134575_mongo-data
+    driver: local

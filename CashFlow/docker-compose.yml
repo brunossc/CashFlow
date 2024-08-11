@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  cashflow.bff.api:
+    image: ${DOCKER_REGISTRY-}cashflowbffapi
+    build:
+      context: .
+      dockerfile: CashFlow.BFF.API/Dockerfile
+    networks:
+      - backend
+    depends_on:
+    - cashflow.payment.api
+    - cashflow.reports.api
+
+  cashflow.payment.api:
+    image: ${DOCKER_REGISTRY-}cashflowpaymentapi
+    build:
+      context: .
+      dockerfile: CashFlow.Payment.API/Dockerfile
+    networks:
+      - backend
+    depends_on:
+      - sqlserver
+      - rabbitmq
+
+  cashflow.reports.api:
+    image: ${DOCKER_REGISTRY-}cashflowreportsapi
+    build:
+      context: .
+      dockerfile: CashFlow.Reports.API/Dockerfile
+    networks:
+      - backend
+    depends_on:
+      - mongodb
+      - rabbitmq
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=YourStrong@Passw0rd
+    ports:
+      - "1433:1433"
+    networks:
+      - backend
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - backend
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+
+  mongodb:
+    image: mongo:6
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    networks:
+      - backend
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+    driver: local
+
+networks:
+  backend:
+    driver: bridge
+
