@@ -26,7 +26,7 @@ namespace CashFlow.Reports.API.Infrastructure.Database.Repositories.Base
             _logger = logger;
         }
 
-        public IMongoQueryable<TDocument> Get() =>
+        public IQueryable<TDocument> Get() =>
             _deliverDatabaseSettings.AsQueryable();
 
         public async Task<TDocument> GetAsync(string id) =>

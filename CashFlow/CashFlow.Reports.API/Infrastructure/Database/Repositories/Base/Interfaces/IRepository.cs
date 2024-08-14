@@ -6,7 +6,7 @@ namespace CashFlow.Reports.API.Infrastructure.Database.Repositories.Base.Interfa
 {
     public interface IRepository<TDocument> where TDocument : EntityBase
     {
-        IMongoQueryable<TDocument> Get();
+        IQueryable<TDocument> Get();
         Task<TDocument> GetAsync(string id);
         Task<int> InsertAsync(TDocument document);
         Task<int> UpdateAsync(string id, TDocument sampleEntity);
