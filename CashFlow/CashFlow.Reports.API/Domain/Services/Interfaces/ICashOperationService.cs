@@ -1,0 +1,11 @@
+﻿using CashFlow.Reports.API.Domain.DTOs;
+using MongoDB.Driver.Linq;
+
+namespace CashFlow.Payment.API.Domain.Services.Interfaces
+{
+    public interface ICashOperationService
+    {
+        IList<ConsolidateDay> GetConsolidateByDay();
+        Task<int> SetOperation(CashOperation operation);
+    }
+}

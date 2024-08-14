@@ -1,6 +1,6 @@
 ﻿using CashFlow.Sidecar.MQ.Base.Interfaces;
 
-namespace CashFlow.Payment.API.Infrastructure.MQ.Queue.Interfaces
+namespace CashFlow.Reports.API.Infrastructure.MQ.Queues.Interfaces
 {
     public interface ICashOperationQueue : IQueueConfiguration
     { }

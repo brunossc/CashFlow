@@ -1,14 +1,22 @@
 ﻿using CashFlow.Payment.API.Infrastructure.MQ.Exchanges.Interfaces;
 using CashFlow.Payment.API.Infrastructure.MQ.Publishers.Interfaces;
 using CashFlow.Sidecar.MQ.Base;
+using CashFlow.Sidecar.MQ.Base.Interfaces;
+using System.Runtime.CompilerServices;
 
 namespace CashFlow.Payment.API.Infrastructure.MQ.Publishers
 {
     public class CashOperationReportPublisher : PublisherService, ICashOperationReportPublisher
     {
-        public CashOperationReportPublisher(ICashOperationExchange configuration)
-      : base(configuration)
+        private readonly IExchangeConfiguration _config;
+        public CashOperationReportPublisher(ICashOperationExchange configuration) : base()
         {
+            _config = configuration;
+        }
+
+        public void EnsureCreated()
+        {
+            base.EnsureCreated(_config);
         }
 
         public void SendMessage(string message)

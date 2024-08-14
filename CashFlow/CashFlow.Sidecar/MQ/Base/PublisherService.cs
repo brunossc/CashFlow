@@ -1,4 +1,6 @@
 ﻿using CashFlow.Sidecar.MQ.Base.Interfaces;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 using RabbitMQ.Client;
 using System.Text;
 
@@ -6,12 +8,15 @@ namespace CashFlow.Sidecar.MQ.Base
 {
     public abstract class PublisherService : IDisposable
     {
-        private readonly IConnection _connection;
-        private readonly IModel _channel;
-        private readonly string _exchangeName;
-        private readonly string _routingKey;
+        private IConnection _connection;
+        private IModel _channel;
+        private string _exchangeName;
+        private string _routingKey;
 
-        protected PublisherService(IExchangeConfiguration configuration)
+        protected PublisherService()
+        { }
+
+        protected void EnsureCreated(IExchangeConfiguration configuration)
         {
             _exchangeName = configuration.ExchangeName;
             _routingKey = configuration.RoutingKey;
@@ -31,7 +36,6 @@ namespace CashFlow.Sidecar.MQ.Base
                                  basicProperties: null,
                                  body: body);
 
-            Console.WriteLine($" [x] Sent '{message}'");
         }
 
         public void Dispose()

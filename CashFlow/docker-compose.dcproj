@@ -4,10 +4,10 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
-    <ProjectGuid>926a9b04-cda0-4887-aaeb-ea2155044b68</ProjectGuid>
+    <ProjectGuid>56b0da4c-6719-4971-98ac-b8ed1044a58f</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
-    <DockerServiceName>cashflow.bff.api</DockerServiceName>
+    <DockerServiceName>cashflow.reports.api</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

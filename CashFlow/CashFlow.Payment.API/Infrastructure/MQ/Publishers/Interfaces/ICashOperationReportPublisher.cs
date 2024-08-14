@@ -3,5 +3,6 @@
     public interface ICashOperationReportPublisher
     {
         void SendMessage(string message);
+        void EnsureCreated();
     }
 }

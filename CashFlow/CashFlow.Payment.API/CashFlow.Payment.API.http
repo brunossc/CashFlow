@@ -1,6 +1,6 @@
-@CashFlow.Payment.API_HostAddress = http://localhost:5062
+# @CashFlow.Payment.API_HostAddress = http://localhost:5062
 
-GET {{CashFlow.Payment.API_HostAddress}}/weatherforecast/
+# GET {{CashFlow.Payment.API_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

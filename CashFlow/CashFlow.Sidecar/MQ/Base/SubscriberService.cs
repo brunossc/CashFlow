@@ -12,6 +12,7 @@ namespace CashFlow.Sidecar.MQ.Base
         private readonly string _queueName;
         private readonly string _routingKey;
         private readonly string _exchangeName;
+        private bool _binded = false;
 
         private IConnection _connection;
         private IModel _channel;
@@ -40,6 +41,7 @@ namespace CashFlow.Sidecar.MQ.Base
 
             if (!string.IsNullOrWhiteSpace(_routingKey) && !string.IsNullOrWhiteSpace(_exchangeName))
             {
+                _channel.ExchangeDeclare(exchange: _exchangeName, type: ExchangeType.Direct, durable: true);
                 _channel.QueueBind(
                     queue: _queueName,
                     exchange: _exchangeName,

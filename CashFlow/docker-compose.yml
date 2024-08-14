@@ -1,17 +1,5 @@
-version: '3.8'
 
 services:
-  cashflow.bff.api:
-    image: ${DOCKER_REGISTRY-}cashflowbffapi
-    build:
-      context: .
-      dockerfile: CashFlow.BFF.API/Dockerfile
-    networks:
-      - backend
-    depends_on:
-    - cashflow.payment.api
-    - cashflow.reports.api
-
   cashflow.payment.api:
     image: ${DOCKER_REGISTRY-}cashflowpaymentapi
     build:
@@ -19,6 +7,11 @@ services:
       dockerfile: CashFlow.Payment.API/Dockerfile
     networks:
       - backend
+    ports:
+    - "65231:8080"
+    - "65233:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - sqlserver
       - rabbitmq
@@ -30,6 +23,11 @@ services:
       dockerfile: CashFlow.Reports.API/Dockerfile
     networks:
       - backend
+    ports:
+    - "65215:8080"
+    - "65222:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
     depends_on:
       - mongodb
       - rabbitmq
@@ -39,7 +37,7 @@ services:
     container_name: sqlserver
     environment:
       - ACCEPT_EULA=Y
-      - SA_PASSWORD=YourStrong@Passw0rd
+      - SA_PASSWORD=MyPassw0rd
     ports:
       - "1433:1433"
     networks:
@@ -74,4 +72,3 @@ volumes:
 networks:
   backend:
     driver: bridge
-

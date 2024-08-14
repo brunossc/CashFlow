@@ -1,10 +1,11 @@
+using CashFlow.BFF.API.Controllers.Base;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CashFlow.BFF.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherForecastController : ControllerAppBase
     {
         private static readonly string[] Summaries = new[]
         {
