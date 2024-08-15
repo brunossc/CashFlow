@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Sidecar", "CashFlo
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{56B0DA4C-6719-4971-98AC-B8ED1044A58F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Payment.API.Test", "..\Test\CashFlow.Payment.API.Test.csproj", "{1547944C-B196-4F13-9724-8F9275D7AE5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Payment.API.Test", "..\Test\CashFlow.Payment.API.Test\CashFlow.Payment.API.Test.csproj", "{1547944C-B196-4F13-9724-8F9275D7AE5C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9E26372F-108A-4D71-8302-0B5CD09CF80F}"
 EndProject

@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CashFlow\CashFlow.Reports.API\CashFlow.Reports.API.csproj" />
+    <ProjectReference Include="..\..\src\CashFlow.Reports.API\CashFlow.Reports.API.csproj" />
   </ItemGroup>
 
 </Project>
