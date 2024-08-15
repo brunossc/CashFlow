@@ -13,6 +13,6 @@ Para desfazer o ambiente você deve  executar o comando abaixo no diretório "sr
 
 - docker-compose down
 
-Considerando alguns ambientes e infraestruturas melhor executar com o Visual Studio Community 2022.
+Considerando alguns ambientes melhor executar com o Visual Studio Community 2022.
 
 Para testes de funcionalidade foi disponibilizado um arquivo do Postman na pasta "\Postman Collection".
