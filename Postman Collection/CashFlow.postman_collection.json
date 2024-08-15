@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "b8c3daa0-c153-47b7-8d8e-d6e7614a5a0c",
+		"name": "CashFlow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2416471"
+	},
+	"item": [
+		{
+			"name": "AddDebit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"value\": 50000.00,\n  \"description\": \"Contratação Bruno Sena :)\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65231/CashOperation/AddDebit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65231",
+					"path": [
+						"CashOperation",
+						"AddDebit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCredit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"value\": 5000000.00,\n  \"description\": \"retorno com a contratação do Bruno Sena :)\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:65231/CashOperation/AddCredit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65231",
+					"path": [
+						"CashOperation",
+						"AddCredit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report- Consolidated by day",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:65215/Report/GetReport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65215",
+					"path": [
+						"Report",
+						"GetReport"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

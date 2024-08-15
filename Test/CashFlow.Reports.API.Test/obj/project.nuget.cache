@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "dgSpecHash": "MppffcxgUAPA8Et5xPrHDUilwo1AN47u3dQtWQ1gUYCbPWZgY7htsagsc9ducSJipnqXxFVisYa4e0TQHgO8Mg==",
+  "success": false,
+  "projectFilePath": "C:\\Bruno\\Estudo\\Git\\CashFlow\\Test\\CashFlow.Reports.API.Test\\CashFlow.Reports.API.Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bscorreia\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\microsoft.codecoverage\\17.6.0\\microsoft.codecoverage.17.6.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\microsoft.net.test.sdk\\17.6.0\\microsoft.net.test.sdk.17.6.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\microsoft.playwright\\1.27.1\\microsoft.playwright.1.27.1.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\microsoft.playwright.mstest\\1.27.1\\microsoft.playwright.mstest.1.27.1.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\microsoft.playwright.testadapter\\1.27.1\\microsoft.playwright.testadapter.1.27.1.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.6.0\\microsoft.testplatform.objectmodel.17.6.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\microsoft.testplatform.testhost\\17.6.0\\microsoft.testplatform.testhost.17.6.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\moq\\4.20.70\\moq.4.20.70.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\mstest.testadapter\\3.0.4\\mstest.testadapter.3.0.4.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\mstest.testframework\\3.0.4\\mstest.testframework.3.0.4.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\bscorreia\\.nuget\\packages\\system.text.json\\6.0.5\\system.text.json.6.0.5.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Bruno\\Estudo\\Git\\CashFlow\\Test\\CashFlow\\CashFlow.Reports.API\\CashFlow.Reports.API.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Bruno\\Estudo\\Git\\CashFlow\\Test\\CashFlow\\CashFlow.Reports.API\\CashFlow.Reports.API.csproj",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
