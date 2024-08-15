@@ -1,10 +1,10 @@
 
 services:
-  cashflow.payment.api:
-    image: ${DOCKER_REGISTRY-}cashflowpaymentapi
+  cashflow.Financial.api:
+    image: ${DOCKER_REGISTRY-}cashflowfinancialapi
     build:
       context: .
-      dockerfile: CashFlow.Payment.API/Dockerfile
+      dockerfile: CashFlow.Financial.API/Dockerfile
     networks:
       - backend
     ports:

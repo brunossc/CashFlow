@@ -1,7 +1,7 @@
 using Moq;
 using CashFlow.Reports.API.Controllers;
 using Microsoft.AspNetCore.Mvc;
-using CashFlow.Payment.API.Domain.Services.Interfaces;
+using CashFlow.Financial.API.Domain.Services.Interfaces;
 using CashFlow.Reports.API.Domain.DTOs;
 
 namespace CashFlow.Reports.API.Tests.Controllers

@@ -22,7 +22,7 @@
         <mxCell id="YleA5OH3Q9Nap5_QXdBp-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="YleA5OH3Q9Nap5_QXdBp-2" target="YleA5OH3Q9Nap5_QXdBp-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="YleA5OH3Q9Nap5_QXdBp-2" value="Payment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+        <mxCell id="YleA5OH3Q9Nap5_QXdBp-2" value="financial" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
           <mxGeometry x="400.82" y="37" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="YleA5OH3Q9Nap5_QXdBp-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="YleA5OH3Q9Nap5_QXdBp-3" target="YleA5OH3Q9Nap5_QXdBp-42" edge="1">
@@ -93,16 +93,16 @@
         <mxCell id="YleA5OH3Q9Nap5_QXdBp-30" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.queue_generic;rotation=-90;" parent="1" vertex="1">
           <mxGeometry x="421" y="139" width="50" height="15" as="geometry" />
         </mxCell>
-        <mxCell id="YleA5OH3Q9Nap5_QXdBp-32" value="{Payment Event}" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="YleA5OH3Q9Nap5_QXdBp-32" value="{financial Event}" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="337.58" y="230" width="69.18" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="YleA5OH3Q9Nap5_QXdBp-33" value="{Payment Event }" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" parent="1" vertex="1">
+        <mxCell id="YleA5OH3Q9Nap5_QXdBp-33" value="{financial Event }" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" parent="1" vertex="1">
           <mxGeometry x="391.82" y="131.5" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="YleA5OH3Q9Nap5_QXdBp-34" value="{ Report&amp;nbsp; Payment Event }" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=90;" parent="1" vertex="1">
+        <mxCell id="YleA5OH3Q9Nap5_QXdBp-34" value="{ Report&amp;nbsp; financial Event }" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=90;" parent="1" vertex="1">
           <mxGeometry x="479" y="132.5" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="YleA5OH3Q9Nap5_QXdBp-35" value="{ Report&amp;nbsp; Payment Event }" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=90;" parent="1" vertex="1">
+        <mxCell id="YleA5OH3Q9Nap5_QXdBp-35" value="{ Report&amp;nbsp; financial Event }" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=90;" parent="1" vertex="1">
           <mxGeometry x="479" y="424.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YleA5OH3Q9Nap5_QXdBp-37" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.queue_generic;rotation=90;" parent="1" vertex="1">

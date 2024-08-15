@@ -1,10 +1,10 @@
 ﻿using Amazon.Auth.AccessControlPolicy;
-using CashFlow.Payment.API.Domain.Services.Interfaces;
+using CashFlow.Financial.API.Domain.Services.Interfaces;
 using CashFlow.Reports.API.Domain.DTOs;
 using CashFlow.Reports.API.Infrastructure.Database.Repositories.Interfaces;
 using MongoDB.Driver.Linq;
 
-namespace CashFlow.Payment.API.Domain.Services
+namespace CashFlow.Financial.API.Domain.Services
 {
     public class CashOperationService : ICashOperationService
     {

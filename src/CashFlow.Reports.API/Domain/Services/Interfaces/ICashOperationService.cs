@@ -1,7 +1,7 @@
 ﻿using CashFlow.Reports.API.Domain.DTOs;
 using MongoDB.Driver.Linq;
 
-namespace CashFlow.Payment.API.Domain.Services.Interfaces
+namespace CashFlow.Financial.API.Domain.Services.Interfaces
 {
     public interface ICashOperationService
     {

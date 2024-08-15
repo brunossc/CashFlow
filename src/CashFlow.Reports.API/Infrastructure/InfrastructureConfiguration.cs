@@ -6,7 +6,7 @@ using CashFlow.Reports.API.Infrastructure.MQ.Subscribes;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace CashFlow.Payment.API.Infrastructure
+namespace CashFlow.Financial.API.Infrastructure
 {
     public static class InfrastructureConfiguration
     {

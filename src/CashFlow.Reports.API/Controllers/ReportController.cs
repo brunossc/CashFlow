@@ -1,4 +1,4 @@
-using CashFlow.Payment.API.Domain.Services.Interfaces;
+using CashFlow.Financial.API.Domain.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CashFlow.Reports.API.Controllers

@@ -1,12 +1,12 @@
 ﻿using Moq;
 using Microsoft.Extensions.Logging;
-using CashFlow.Payment.API.Domain.Services;
+using CashFlow.Financial.API.Domain.Services;
 using CashFlow.Reports.API.Infrastructure.Database.Repositories.Interfaces;
 using CashFlow.Reports.API.Domain.DTOs;
 using MongoDB.Driver.Linq;
 using System.Xml;
 
-namespace CashFlow.Payment.API.Tests.Domain.Services
+namespace CashFlow.Financial.API.Tests.Domain.Services
 {
     [TestClass]
     public class CashOperationServiceTests

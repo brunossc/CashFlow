@@ -1,5 +1,5 @@
-﻿using CashFlow.Payment.API.Domain.Services;
-using CashFlow.Payment.API.Domain.Services.Interfaces;
+﻿using CashFlow.Financial.API.Domain.Services;
+using CashFlow.Financial.API.Domain.Services.Interfaces;
 
 namespace CashFlow.Reports.API.Domain
 {
