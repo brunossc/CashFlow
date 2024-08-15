@@ -5,10 +5,10 @@ A Aplicação consiste em 2 serviços:
 
 Para subir a aplicação executar o comando abaixo no diretório "src":
 
-docker-compose up -d
+- docker-compose up -d
 
 Para desfazer o ambiente executar o comando abaixo no diretório "src":
 
-docker-compose down
+- docker-compose down
 
 Para testes de funcionalidade foi disponibilizado um arquivo do Postman na pasta "\Postman Collection";
