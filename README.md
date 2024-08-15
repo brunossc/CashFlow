@@ -1,8 +1,10 @@
 
 Proposta da arquitetura:
+
 Está disponível em um arquivo do Draw.io(https://app.diagrams.net/) na pasta "/" como nome: CashFlow.drawio.
 
 Apesar da representação do Gateway e do BFF os mesmos são apenas ilustrativos, arquitetura referência:
+
 - https://learn.microsoft.com/pt-br/azure/architecture/microservices/design/patterns
 
 A Aplicação consiste em 2 serviços e é necessario ter o Docker instalado na máquina:
