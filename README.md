@@ -7,7 +7,7 @@ Serviços:
 
 Para subir a aplicação você deve executar o comando abaixo no diretório "src":
 
-- docker-compose up -d
+- docker-compose up
 
 Para desfazer o ambiente você deve  executar o comando abaixo no diretório "src":
 
