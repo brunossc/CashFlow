@@ -10,7 +10,7 @@ Apesar da representação do Gateway e do BFF os mesmos são apenas ilustrativos
 
 
 
-A Aplicação consiste em 2 serviços e é necessario ter o Docker instalado na máquina:
+A Aplicação consiste em 2 serviços e é necessário ter o Docker instalado na máquina:
 
 Serviços:
 
