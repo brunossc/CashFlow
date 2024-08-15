@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Payment.API", "Cas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Reports.API", "CashFlow.Reports.API\CashFlow.Reports.API.csproj", "{8486B641-D52B-451F-80CD-2C7A972F9D50}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.BFF.API", "CashFlow.BFF.API\CashFlow.BFF.API.csproj", "{CEC507C9-F8DD-4E9A-8C2C-0C9CD9AD3606}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Sidecar", "CashFlow.Sidecar\CashFlow.Sidecar.csproj", "{AAB01A30-B412-4BEF-B01F-C9256F749E14}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{56B0DA4C-6719-4971-98AC-B8ED1044A58F}"
@@ -17,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Payment.API.Test",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9E26372F-108A-4D71-8302-0B5CD09CF80F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Reports.API.Test", "..\Test\CashFlow.Reports.API.Test\CashFlow.Reports.API.Test.csproj", "{D2B59F3E-A8F1-4E2D-9F0D-2740685B9D13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CashFlow.Reports.API.Test", "..\Test\CashFlow.Reports.API.Test\CashFlow.Reports.API.Test.csproj", "{D2B59F3E-A8F1-4E2D-9F0D-2740685B9D13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +31,6 @@ Global
 		{8486B641-D52B-451F-80CD-2C7A972F9D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8486B641-D52B-451F-80CD-2C7A972F9D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8486B641-D52B-451F-80CD-2C7A972F9D50}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CEC507C9-F8DD-4E9A-8C2C-0C9CD9AD3606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEC507C9-F8DD-4E9A-8C2C-0C9CD9AD3606}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEC507C9-F8DD-4E9A-8C2C-0C9CD9AD3606}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEC507C9-F8DD-4E9A-8C2C-0C9CD9AD3606}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AAB01A30-B412-4BEF-B01F-C9256F749E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AAB01A30-B412-4BEF-B01F-C9256F749E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAB01A30-B412-4BEF-B01F-C9256F749E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
