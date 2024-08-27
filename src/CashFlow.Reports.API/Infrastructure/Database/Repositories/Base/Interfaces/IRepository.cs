@@ -1,4 +1,4 @@
-﻿using CashFlow.Reports.API.Domain.DTOs.Base;
+﻿using CashFlow.Reports.API.Domain.Entities.Base;
 using MongoDB.Driver.Linq;
 using System.Linq.Expressions;
 

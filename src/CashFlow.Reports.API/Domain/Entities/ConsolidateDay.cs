@@ -1,6 +1,6 @@
-﻿using CashFlow.Reports.API.Domain.DTOs.Base;
+﻿using CashFlow.Reports.API.Domain.Entities.Base;
 
-namespace CashFlow.Reports.API.Domain.DTOs
+namespace CashFlow.Reports.API.Domain.Entities
 {
     public class ConsolidateDay : EntityBase
     {

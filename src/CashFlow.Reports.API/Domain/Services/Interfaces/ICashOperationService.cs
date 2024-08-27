@@ -1,4 +1,4 @@
-﻿using CashFlow.Reports.API.Domain.DTOs;
+﻿using CashFlow.Reports.API.Domain.Entities;
 using MongoDB.Driver.Linq;
 
 namespace CashFlow.Financial.API.Domain.Services.Interfaces

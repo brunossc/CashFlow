@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace CashFlow.Reports.API.Domain.DTOs.Base;
+namespace CashFlow.Reports.API.Domain.Entities.Base;
 
 public abstract class EntityBase
 {

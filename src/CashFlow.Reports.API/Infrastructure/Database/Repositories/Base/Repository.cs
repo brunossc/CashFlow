@@ -1,4 +1,4 @@
-﻿using CashFlow.Reports.API.Domain.DTOs.Base;
+﻿using CashFlow.Reports.API.Domain.Entities.Base;
 using CashFlow.Reports.API.Infrastructure.Database.Repositories.Base.Interfaces;
 using MongoDB.Bson;
 using MongoDB.Driver;

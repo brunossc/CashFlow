@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using CashFlow.Financial.API.Domain.Services;
 using CashFlow.Reports.API.Infrastructure.Database.Repositories.Interfaces;
-using CashFlow.Reports.API.Domain.DTOs;
+using CashFlow.Reports.API.Domain.Entities;
 using MongoDB.Driver.Linq;
 using System.Xml;
 

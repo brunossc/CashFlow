@@ -1,6 +1,6 @@
 ﻿using Amazon.Auth.AccessControlPolicy;
 using CashFlow.Financial.API.Domain.Services.Interfaces;
-using CashFlow.Reports.API.Domain.DTOs;
+using CashFlow.Reports.API.Domain.Entities;
 using CashFlow.Reports.API.Infrastructure.Database.Repositories.Interfaces;
 using MongoDB.Driver.Linq;
 

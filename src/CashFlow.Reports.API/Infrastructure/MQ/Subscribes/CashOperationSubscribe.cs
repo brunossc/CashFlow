@@ -1,5 +1,5 @@
 ﻿using CashFlow.Financial.API.Domain.Services.Interfaces;
-using CashFlow.Reports.API.Domain.DTOs;
+using CashFlow.Reports.API.Domain.Entities;
 using CashFlow.Reports.API.Infrastructure.MQ.Queues.Interfaces;
 using CashFlow.Sidecar.MQ.Base;
 
